@@ -7,7 +7,7 @@ var loadedGoogleCount = 0;
 var gFontsUpdateCacheList = [];
 var tFontsUpdateCacheList = [];
 lib.ssMetadata = [
-		{name:"CGIB_3611_Vegas_1Mil_824x402_atlas_P_", frames: [[0,0,394,330],[0,573,394,165],[396,573,394,165],[0,332,336,239],[338,332,336,239],[396,0,336,239]]}
+		{name:"CGIB_3611 Vegas 1Mil 824x402_atlas_P_", frames: [[0,0,394,330],[0,573,394,165],[396,573,394,165],[338,332,336,239],[396,0,336,239],[0,332,336,239]]}
 ];
 
 
@@ -78,42 +78,42 @@ p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
 
 
 (lib.Chooper2Shade = function() {
-	this.spriteSheet = ss["CGIB_3611_Vegas_1Mil_824x402_atlas_P_"];
+	this.spriteSheet = ss["CGIB_3611 Vegas 1Mil 824x402_atlas_P_"];
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Chooper2Wings1 = function() {
-	this.spriteSheet = ss["CGIB_3611_Vegas_1Mil_824x402_atlas_P_"];
+	this.spriteSheet = ss["CGIB_3611 Vegas 1Mil 824x402_atlas_P_"];
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Chooper2Wings2 = function() {
-	this.spriteSheet = ss["CGIB_3611_Vegas_1Mil_824x402_atlas_P_"];
+	this.spriteSheet = ss["CGIB_3611 Vegas 1Mil 824x402_atlas_P_"];
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.COPTER1Wings1 = function() {
-	this.spriteSheet = ss["CGIB_3611_Vegas_1Mil_824x402_atlas_P_"];
+	this.spriteSheet = ss["CGIB_3611 Vegas 1Mil 824x402_atlas_P_"];
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.COPTER1Wings2 = function() {
-	this.spriteSheet = ss["CGIB_3611_Vegas_1Mil_824x402_atlas_P_"];
+	this.spriteSheet = ss["CGIB_3611 Vegas 1Mil 824x402_atlas_P_"];
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.COPTER1 = function() {
-	this.spriteSheet = ss["CGIB_3611_Vegas_1Mil_824x402_atlas_P_"];
+	this.spriteSheet = ss["CGIB_3611 Vegas 1Mil 824x402_atlas_P_"];
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
@@ -1173,27 +1173,12 @@ p.nominalBounds = new cjs.Rectangle(-341.5,-131.5,683.1,263.2);
 	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
-	this.frame_0 = function() {
-		/* Click to Go to Web Page
-		Clicking on the specified symbol instance loads the URL in a new browser window.
-		
-		Instructions:
-		1. Replace http://www.adobe.com with the desired URL address.
-		   Keep the quotation marks ("").
-		*/
-		
-		this.CTA.addEventListener("click", fl_ClickToGoToWebPage);
-		
-		function fl_ClickToGoToWebPage() {
-			window.open("http://vegas.williamhill.com/", "_blank");
-		}
-	}
 	this.frame_306 = function() {
 		this.gotoAndPlay(283);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(306).call(this.frame_306).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(306).call(this.frame_306).wait(1));
 
 	// Layer 2
 	this.instance = new lib._1MillionMovieVector();
@@ -1289,7 +1274,7 @@ lib.properties = {
 	webfonts: {},
 	manifest: [
 		{src:"images/BackgroundNew.jpg", id:"BackgroundNew"},
-		{src:"images/CGIB_3611_Vegas_1Mil_824x402_atlas_P_.png", id:"CGIB_3611_Vegas_1Mil_824x402_atlas_P_"}
+		{src:"images/CGIB_3611 Vegas 1Mil 824x402_atlas_P_.png", id:"CGIB_3611 Vegas 1Mil 824x402_atlas_P_"}
 	],
 	preloads: []
 };
